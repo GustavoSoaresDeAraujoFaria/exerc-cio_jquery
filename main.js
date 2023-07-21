@@ -8,7 +8,8 @@ $(document).ready(function() {
         $('#Tarefa').val('');
     });
 
-    $('#tabela-corpo').click(function(){
-        $(this).css('text-decoration', 'line-through'); // Corrigindo a sintaxe para aplicar o estilo corretamente
+    $('#tabela-corpo').on('click', 'td', function(){
+        $(this).css('text-decoration', 'line-through');
     });
 });
+
